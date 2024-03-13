@@ -1,8 +1,18 @@
+button:disabled {
+    background-color: #ccc !important;
+    color: #666 !important;
+    cursor: not-allowed !important;
+}
+
 .App {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.block {
+    display: block;
 }
 
 .container {
@@ -62,4 +72,8 @@ input:focus {
 
 .text-center {
     text-align: center;
+}
+
+.text-red {
+    color: red;
 }
