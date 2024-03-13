@@ -39,8 +39,8 @@ describe('LoginForm', () => {
             fireEvent.change(passwordInput, { target: { value: 'testPassword' } });
         });
 
-        expect(emailInput.value).toBe('test@email.com');
-        expect(passwordInput.value).toBe('testPassword');
+        expect(emailInput.getAttribute('value')).toBe('test@email.com');
+        expect(passwordInput.getAttribute('value')).toBe('testPassword');
 
         (api.login as jest.MockedFunction<typeof api.login>).mockResolvedValue(true);
 
